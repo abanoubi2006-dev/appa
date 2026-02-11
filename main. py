@@ -1,0 +1,51 @@
+import re, hashlib, urllib.request, os, ast, operator, random, time, sys
+
+class APPA_Ultimate_Sovereign:
+    def __init__(self):
+        self.memory = {}
+        self.colors = {"gold": "\033[93m", "cyan": "\033[96m", "red": "\033[91m", "green": "\033[92m", "reset": "\033[0m"}
+        self.master_dict = {
+            "fusion": ["اندماج", "fusion"], "evolution": ["تطور", "evolve"],
+            "ghost": ["خفاء", "ghost"], "ai_core": ["think", "ذكاء"],
+            "security": ["secure", "تشفير"], "output": ["say", "اطبع"],
+            "storage": ["set", "تخزين"], "hardware": ["تحكم", "hardware"]
+        }
+
+    def auto_repair(self, code):
+        tags = re.findall(r'<([a-zA-Z0-9_]+)', code)
+        closings = re.findall(r'</([a-zA-Z0-9_]+)>', code)
+        for tag in reversed(tags):
+            if tag not in closings: code += f"</{tag}>"
+        return code
+
+    def run(self, code):
+        print(f"{self.colors['gold']}🔱 APPA SOVEREIGN v12.0 | ACTIVE{self.colors['reset']}")
+        code = self.auto_repair(code)
+        pattern = r'<(.*?)(\s.*?)?>(.*?)</\1>'
+        for match in re.finditer(pattern, code, re.DOTALL):
+            tag, attr_raw, content = match.group(1).lower(), match.group(2), match.group(3).strip()
+            attrs = dict(re.findall(r'(\w+)="(.*?)"', attr_raw or ""))
+            for var, val in self.memory.items(): content = content.replace(f"${var}", str(val))
+            action = next((k for k, v in self.master_dict.items() if tag in v), "unknown")
+            self.execute(action, attrs, content)
+
+    def execute(self, action, attrs, content):
+        try:
+            if action == "fusion": print(f"🌀 اندماج كوني: {content}")
+            elif action == "evolution": print(f"🧬 تطور نظام {content}")
+            elif action == "ghost": print(f"👻 وضع الخفاء نشط (مخفي من النظام)")
+            elif action == "output": print(f"📣 {content}")
+            elif action == "ai_core": print(f"🧠 ذكاء سيادي: جاري تحليل {content}")
+            elif action == "security": print(f"🛡️ أمن: تم تشفير {content}")
+        except Exception as e: print(f"⚠️ خطأ: {e}")
+
+if __name__ == '__main__':
+    appa = APPA_Ultimate_Sovereign()
+    # كود الاختبار لتجربة كل القوى
+    test_script = """
+    <خفاء>نشط</خفاء>
+    <تطور>الذاكرة</تطور>
+    <ذكاء>مستقبل التكنولوجيا</ذكاء>
+    <اطبع>APPA Sovereign v12.0 is Global!</اطبع>
+    """
+    appa.run(test_script)
