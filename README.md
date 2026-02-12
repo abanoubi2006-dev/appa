@@ -1,18 +1,29 @@
-# 🔱 APPA Sovereign Language v12.0
-**Created by: Abanoub (abanoubi2006-dev)**
-
-APPA is a revolutionary, multi-lingual programming language designed for AI, Security, and System Automation.
-
-## ✨ Features:
-- **Multi-Lingual Tags:** Write code in Arabic or English.
-- **Auto-Repair:** The engine fixes your syntax errors automatically.
-- **Sovereign Core:** Integrated AI and Ghost mode for privacy.
-
-## 🚀 Quick Start:
-Create a file named `test.appa` and write:
-`<ذكاء>حلل بيانات السوق</ذكاء>`
-`<اطبع>تمت المهمة بنجاح</اطبع>`
-
-## 🛠 Installation:
-1. Download `main.py`.
-2. Run it using Python: `python main.py your_file.appa`
+​The Universal Programming Framework for Engineer Abanoub
+​APPA Supreme هي بيئة عمل برمجية متكاملة (Framework) ولغة "تاجية" ذكية مصممة للعمل داخل بيئة Termux. تجمع اللغة بين الأقسام الأكاديمية الثمانية لعلوم الحاسب وبين المجالات التنفيذية الحديثة في نظام واحد متناغم وصامت.
+​🛠 الأقسام البرمجية المدعومة (Core Modules)
+​تم دمج كافة تخصصات حاسبات ومعلومات داخل المحرك عبر نظام الـ Flags:
+​1. الأقسام الأكاديمية الثمانية:
+​-cs (Computer Science): الخوارزميات وهيكلة البيانات.
+​-ai (Artificial Intelligence): موديولات تعلم الآلة والتحليل العصبي.
+​-sec (Cyber Security): التشفير واختبار الاختراق.
+​-it (Information Technology): الشبكات وإدارة السيرفرات.
+​-is (Information Systems): قواعد البيانات وتنظيم المعلومات.
+​-se (Software Engineering): إدارة دورة حياة البرمجيات والاختبار.
+​-sys (Systems): التعامل مع العتاد والمعالجات.
+​-ds (Data Science): تحليل البيانات الضخمة والأنماط.
+​2. المجالات التنفيذية:
+​-web: تطوير واجهات المواقع والباك-إند.
+​-mob: برمجة تطبيقات الموبايل.
+​-iot: الإنترنت للأشياء والتحكم في الحساسات.
+​🚀 المميزات الرئيسية (Key Features)
+​نظام القوالب (Auto-Templating): توليد الأكواد الثابتة (Boilerplates) تلقائياً بمجرد اختيار المجال.
+​التصحيح الذاتي (Self-Healing): ميكانيكية متطورة لرصد أخطاء التاجات وإصلاحها ذاتياً.
+​الواجهة الصامتة (Dark UI): تصميم أسود بالكامل، مباشر وعملي، بعيداً عن الترحيبات غير الضرورية.
+​المحلل الذكي (Master Analyzer): موديول يقوم بتحليل استهلاك الموارد (RAM/CPU) أثناء التنفيذ
+تشغيل الكود appa -new -sec my_tool.appa
+إنشاء مشروع جديد بقالب جاهز:my_tool.appa
+الملكية (Ownership)
+المطور الرئيسي: مهندس أبانوب.
+الحالة: مستقر (V15.0 Gold).
+البيئة المستهدفة: Termux / Linux.
+ملاحظة تقنية: تم حفظ كافة بروتوكولات الألوان، البدايات، والتحويلات البرمجية في الذاكرة المستديمة لضمان استقرار النظام وتطويره المستقبلي.
